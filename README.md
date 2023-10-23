@@ -11,5 +11,7 @@ cd aptos_1to1
 pip install -r requirements.txt
 python main.py
 ```
+
+
 add private keys and wallet
 setup delay and amount in main.py
