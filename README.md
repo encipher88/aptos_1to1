@@ -8,10 +8,9 @@ apt-get install python3.11 -y
 ln -s /usr/bin/python3.11 /usr/bin/python
 python --version
 
-sudo sed -i 's/"function": "0x1::coin::transfer",/"function": "0x1::aptos_account::transfer",/g' /usr/local/lib/python3.11/dist-packages/aptos_sdk/client.py
-
 cd aptos_1to1
 pip install -r requirements.txt
+sudo sed -i 's/"function": "0x1::coin::transfer",/"function": "0x1::aptos_account::transfer",/g' /usr/local/lib/python3.11/dist-packages/aptos_sdk/client.py
 python main.py
 ```
 
